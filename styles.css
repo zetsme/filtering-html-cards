@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+  color: white;
+}
+.buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.card {
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: unset;
+  background: #645858;
+  color: unset;
+  cursor: pointer;
+}
+.bg--red {
+  background-color: red;
+}
+.bg--blue {
+  background-color: blue;
+}
+.bg--green {
+  background-color: green;
+}
+.hide {
+  display: none;
+}
